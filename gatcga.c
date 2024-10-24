@@ -14,10 +14,12 @@
 
 int main()
 {
+    /*
     system("mode 125,40");   //Set mode to ensure window does not exceed buffer size
     SMALL_RECT WinRect = {0, 0, 125, 40};   //New dimensions for window in 8x12 pixel chars
     SMALL_RECT* WinSize = &WinRect;
     SetConsoleWindowInfo(GetStdHandle(STD_OUTPUT_HANDLE), true, WinSize);   //Set new size for window
+    */
 
     /*system("mode con: cols=125 lines=40");
     COORD bufferSize;
