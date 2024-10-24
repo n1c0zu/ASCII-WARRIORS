@@ -2,4 +2,4 @@
  
 gatcha game with ASCII characters that "will" fight.
 
-test for second branch
+game made 2 uni students
