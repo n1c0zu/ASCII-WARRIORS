@@ -31,19 +31,19 @@ int pull()
     int rar_number = rand() % 1000 + 1;
 
     // Determine the rarity based on the random number
-    if (rar_number >= 392 && rar_number <= 1000) // Normal (40.8%)
+    if (rar_number >= 407 && rar_number <= 1000) // Normal (40.8%)
     {
         return 1;
     }
-    else if (rar_number >= 92 && rar_number <= 391) // Rare (30%)
+    else if (rar_number >= 107 && rar_number <= 406) // Rare (30%)
     {
         return 2;
     }
-    else if (rar_number >= 12 && rar_number <= 91) // Super-Rare (8%)
+    else if (rar_number >= 27 && rar_number <= 106) // Super-Rare (8%)
     {
         return 3;
     }
-    else if (rar_number >= 2 && rar_number <= 11) // Super-Super-Rare (1%)
+    else if (rar_number >= 2 && rar_number <= 26) // Super-Super-Rare (2.5%)
     {
         return 4;
     }
@@ -183,9 +183,9 @@ void total_pull_x_times(char *rar[])
     // Handle the output for each rarity state
     if (state == 5) // Ultra-Rare
     {
-        printf("   [");
-        printf(REDHB BHWHT"%s"CRESET, ur[pull_save]); // Print character name
-        printf("]");
+        printf("   ");
+        printf(REDHB BHWHT"[%s]"CRESET, ur[pull_save]); // Print character name
+        printf("");
 
         //Check if new
         if(inv_ur[pull_save]==0)
@@ -193,7 +193,7 @@ void total_pull_x_times(char *rar[])
             printf("NEW");
         }else{printf("   ");}
 
-        if(inv_ur[pull_save]<99)
+        if(inv_ur[pull_save]<5)
         {
             inv_ur[pull_save] ++; // Mark as obtained
         }
@@ -230,7 +230,7 @@ void total_pull_x_times(char *rar[])
         }else{printf("   ");}
 
 
-        if(inv_r[pull_save]<99)
+        if(inv_r[pull_save]<75)
         {
             inv_r[pull_save] ++; // Mark as obtained
         }
@@ -248,16 +248,16 @@ void total_pull_x_times(char *rar[])
         }else{printf("   ");}
 
 
-        if(inv_sr[pull_save]<99)
+        if(inv_sr[pull_save]<30)
         {
             inv_sr[pull_save] ++; // Mark as obtained
         }
     }
     else if (state == 4) // Super-Super-Rare
     {
-        printf("   [");
-        printf(BHYEL"%c"CRESET, ssr[pull_save]);
-        printf("] ");
+        printf("   ");
+        printf(HYEL"[%c]"CRESET, ssr[pull_save]);
+        printf(" ");
 
         //Check if new
         if(inv_ssr[pull_save]==0)
@@ -266,7 +266,7 @@ void total_pull_x_times(char *rar[])
         }else{printf("   ");}
 
 
-        if(inv_ssr[pull_save]<99)
+        if(inv_ssr[pull_save]<15)
         {
             inv_ssr[pull_save] ++; // Mark as obtained
         }

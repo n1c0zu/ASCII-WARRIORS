@@ -18,10 +18,10 @@ char *ur[] = {":)", "xD", ":P", "##", "&&", "69", "::", "!?", "^^", ":D", "8-", 
 char *rar[] = {"normal", "rare", "super-rare", "super-super-rare", "ultra-rare"};
 
 // Rarity distribution variables
-int n_rar = 609; // Normal rarity count
+int n_rar = 594; // Normal rarity count
 int r_rar = 300; // Rare rarity count
 int sr_rar = 80; // Super-rare rarity count
-int ssr_rar = 10; // Super-super-rare rarity count
+int ssr_rar = 25; // Super-super-rare rarity count
 int ur_rar = 1; // Ultra-rare rarity count
 
 
