@@ -6,6 +6,7 @@
 #define CORE_H
 
 #include "menu.h"
+#include "combat.h"
 
 #include <stdbool.h>
 

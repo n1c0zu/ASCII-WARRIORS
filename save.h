@@ -7,7 +7,7 @@
 
 #include <dirent.h>
 #include <sys/stat.h>
-#include "core.h"
+
 
 // Global variable to store the name of the current save file
 char current_save_file[100] = "No current save";

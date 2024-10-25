@@ -10,9 +10,6 @@
 #include "core.h"
 #include "database.h"
 #include "inventory.h"
-
-#include <windows.h>
-
 #include "save.h"
 
 #define ENDL puts("");

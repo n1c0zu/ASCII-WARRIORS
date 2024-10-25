@@ -9,7 +9,7 @@
 #include <unistd.h>
 #include <windows.h>
 
-#include "combat.h"
+
 #include "core.h"
 
 

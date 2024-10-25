@@ -7,8 +7,9 @@
 #include <unistd.h>
 #include <stdbool.h>
 
-#include "core.h"
+
 #include "menu.h"
+#include "core.h"
 
 
 
