@@ -23,7 +23,9 @@ void load_game(); // Function prototype to load the game state (money and invent
 void menu_print(); // Function prototype to print the menu
 void inv_print(); // Function prototype to print the inventory
 void put_in_fullscreen();
-
+void ascii_save();
+void ascii_load();
+void ascii_inventory();
 
 void combat();
 

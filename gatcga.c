@@ -92,6 +92,7 @@ int main()
                 break;
 
             case '4':  // Caso per mostrare l'inventario
+                ascii_inventory();
                 inv_print();  // Stampa l'inventario
                 break;
 
@@ -102,11 +103,13 @@ int main()
                 break;
 
             case '6':  // Caso per salvare il gioco
+                ascii_save();
                 printf("Current save file: %s\n\n", current_save_file);  // Mostra il file di salvataggio attuale
                 save_game();  // Salva il gioco
                 break;
 
             case '7':  // Caso per caricare il gioco
+                ascii_load();
                 printf("Current save file: %s\n\n", current_save_file);  // Mostra il file di salvataggio attuale
                 load_game();  // Carica il gioco
                 break;

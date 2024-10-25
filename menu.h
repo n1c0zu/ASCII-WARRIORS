@@ -301,6 +301,40 @@ void put_in_fullscreen() {  //prints a logo animation indicating that you have t
 }
 
 
+void ascii_save() {
+        printf(BHRED"   _____    __      ________ \n");
+        printf("  / ____|  /\\ \\    / /  ____|\n");
+        printf(" | (___   /  \\ \\  / /| |__   \n");
+        printf("  \\___ \\ / /\\ \\ \\/ / |  __|  \n");
+        printf("  ____) / ____ \\  /  | |____ \n");
+        printf(" |_____/_/    \\_\\/   |______|\n");
+        printf("                             \n");
+        printf("                             \n"CRESET);
+}
+
+
+void ascii_load() {
+        printf(BHBLU"  _      ____          _____  \n");
+        printf(" | |    / __ \\   /\\   |  __ \\ \n");
+        printf(" | |   | |  | | /  \\  | |  | |\n");
+        printf(" | |   | |  | |/ /\\ \\ | |  | |\n");
+        printf(" | |___| |__| / ____ \\| |__| |\n");
+        printf(" |______\\____/_/    \\_\\_____/ \n");
+        printf("                              \n");
+        printf("                              \n"CRESET);
+}
+
+void ascii_inventory() {
+        printf(BHCYN"  _____ _   ___      ________ _   _ _______ ____  _______     __\n");
+        printf(" |_   _| \\ | \\ \\    / /  ____| \\ | |__   __/ __ \\|  __ \\ \\   / /\n");
+        printf("   | | |  \\| |\\ \\  / /| |__  |  \\| |  | | | |  | | |__) \\ \\_/ / \n");
+        printf("   | | | . ` | \\ \\/ / |  __| | . ` |  | | | |  | |  _  / \\   /  \n");
+        printf("  _| |_| |\\  |  \\  /  | |____| |\\  |  | | | |__| | | \\ \\  | |   \n");
+        printf(" |_____|_| \\_|   \\/   |______|_| \\_|  |_|  \\____/|_|  \\_\\ |_|   \n");
+        printf("                                                                \n");
+        printf("                                                                \n"CRESET);
+}
+
 
 
 
