@@ -80,6 +80,7 @@
 //Reset
 
 #define CRESET "\e[0m"
+#define RESET "\e[0m"
 #define COLOR_RESET "\e[0m"
 
 
@@ -335,6 +336,99 @@ void ascii_inventory() {
         printf("                                                                 \n"CRESET);
 }
 
+
+void funny() {
+    printf(BHRED "NNNNNNNN        NNNNNNNN" CRESET);
+    printf(BHGRN "IIIIIIIIII      " CRESET);
+    printf(BHYEL "GGGGGGGGGGGG        " CRESET);
+    printf(BHBLU "GGGGGGGGGGGG               " CRESET);
+    printf(BHMAG "AAA\n" CRESET);
+
+    printf(BHRED "N:::::::N       N::::::N" CRESET);
+    printf(BHGRN "I::::::::I   " CRESET);
+    printf(BHYEL "GGG::::::::::::G     " CRESET);
+    printf(BHBLU "GGG::::::::::::G              " CRESET);
+    printf(BHMAG "A:::A\n" CRESET);
+
+    printf(BHRED "N::::::::N      N::::::N" CRESET);
+    printf(BHGRN "I::::::::I " CRESET);
+    printf(BHYEL "GG:::::::::::::::G   " CRESET);
+    printf(BHBLU "GG:::::::::::::::G             " CRESET);
+    printf(BHMAG "A:::::A\n" CRESET);
+
+    printf(BHRED "N:::::::::N     N::::::N" CRESET);
+    printf(BHGRN "II::::::II" CRESET);
+    printf(BHYEL "G:::::GGGGGGGG::::G  " CRESET);
+    printf(BHBLU "G:::::GGGGGGGG::::G            " CRESET);
+    printf(BHMAG "A:::::::A\n" CRESET);
+
+    printf(BHRED "N::::::::::N    N::::::N" CRESET);
+    printf(BHGRN "  I::::I " CRESET);
+    printf(BHYEL "G:::::G       GGGGGG " CRESET);
+    printf(BHBLU "G:::::G       GGGGGG           " CRESET);
+    printf(BHMAG "A:::::::::A\n" CRESET);
+
+    printf(BHRED "N:::::::::::N   N::::::N" CRESET);
+    printf(BHGRN "  I::::I" CRESET);
+    printf(BHYEL "G:::::G              " CRESET);
+    printf(BHBLU "G:::::G                        " CRESET);
+    printf(BHMAG "A:::::A:::::A\n" CRESET);
+
+    printf(BHRED "N:::::::N::::N  N::::::N" RESET);
+    printf(BHGRN "  I::::I" RESET);
+    printf(BHYEL "G:::::G              " RESET);
+    printf(BHBLU "G:::::G                       " RESET);
+    printf(BHMAG "A:::::A A:::::A\n" RESET);
+
+    printf(BHRED "N::::::N N::::N N::::::N" RESET);
+    printf(BHGRN "  I::::I" RESET);
+    printf(BHYEL "G:::::G    GGGGGGGGGGG:::::G    GGGGGGGGGG        " RESET);
+    printf(BHMAG "A:::::A   A:::::A\n" RESET);
+
+    printf(BHRED "N::::::N  N::::N:::::::N" RESET);
+    printf(BHGRN "  I::::I" RESET);
+    printf(BHYEL "G:::::G    G::::::::GG:::::G    G::::::::G       " RESET);
+    printf(BHMAG "A:::::A     A:::::A\n" RESET);
+
+    printf(BHRED "N::::::N   N:::::::::::N" RESET);
+    printf(BHGRN "  I::::I" RESET);
+    printf(BHYEL "G:::::G    GGGGG::::GG:::::G    GGGGG::::G      " RESET);
+    printf(BHMAG "A:::::AAAAAAAAA:::::A\n" RESET);
+
+    printf(BHRED "N::::::N    N::::::::::N" RESET);
+    printf(BHGRN "  I::::I" RESET);
+    printf(BHYEL "G:::::G        G::::GG:::::G        G::::G     " RESET);
+    printf(BHMAG "A:::::::::::::::::::::A\n" RESET);
+
+    printf(BHRED "N::::::N     N:::::::::N" RESET);
+    printf(BHGRN "  I::::I" RESET);
+    printf(BHYEL " G:::::G       G::::G G:::::G       G::::G    " RESET);
+    printf(BHMAG "A:::::AAAAAAAAAAAAA:::::A\n" RESET);
+
+    printf(BHRED "N::::::N      N::::::::N" RESET);
+    printf(BHGRN "II::::::II" RESET);
+    printf(BHYEL "G:::::GGGGGGGG::::G  " RESET);
+    printf(BHBLU "G:::::GGGGGGGG::::G   " RESET);
+    printf(BHMAG "A:::::A             A:::::A\n" RESET);
+
+    printf(BHRED "N::::::N       N:::::::N" RESET);
+    printf(BHGRN "I::::::::I " RESET);
+    printf(BHYEL " GG:::::::::::::::G   " RESET);
+    printf(BHBLU "GG:::::::::::::::G  " RESET);
+    printf(BHMAG "A:::::A               A:::::A\n" RESET);
+
+    printf(BHRED "N::::::N        N::::::N" RESET);
+    printf(BHGRN "I::::::::I   " RESET);
+    printf(BHYEL "GGG::::::GGG:::G     " RESET);
+    printf(BHBLU "GGG::::::GGG:::G " RESET);
+    printf(BHMAG "A:::::A                 A:::::A\n" RESET);
+
+    printf(BHRED "NNNNNNNN         NNNNNNN" RESET);
+    printf(BHGRN "IIIIIIIIII      " RESET);
+    printf(BHYEL "GGGGGG   GGGG        " RESET);
+    printf(BHBLU "GGGGGG   GGGG" RESET);
+    printf(BHMAG "AAAAAAA                   AAAAAAA\n" RESET);
+}
 
 
 

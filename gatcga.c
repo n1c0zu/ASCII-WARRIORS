@@ -122,6 +122,12 @@ int main()
             case '9':  // Case to start combat mode
                 first_startup = true;  // Set startup variable
                 combat();  // Start the combat function
+
+                break;
+
+
+            case 'N':
+                funny();
                 break;
 
             default:  // Case of invalid option
