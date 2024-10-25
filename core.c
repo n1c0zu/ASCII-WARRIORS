@@ -183,14 +183,14 @@ void total_pull_x_times(char *rar[])
     // Handle the output for each rarity state
     if (state == 5) // Ultra-Rare
     {
-        printf("   ");
-        printf(REDHB BHWHT"[%s]"CRESET, ur[pull_save]); // Print character name
-        printf("");
+        printf("   [");
+        printf(BHRED"%s"CRESET, ur[pull_save]); // Print character name
+        printf("]");
 
         //Check if new
         if(inv_ur[pull_save]==0)
         {
-            printf("NEW");
+            printf(BHRED"NEW"CRESET);
         }else{printf("   ");}
 
         if(inv_ur[pull_save]<5)
@@ -208,7 +208,7 @@ void total_pull_x_times(char *rar[])
         //Check if new
         if(inv_n[pull_save]==0)
         {
-            printf("NEW");
+            printf(BHGRN"NEW"CRESET);
         }else{printf("   ");}
 
 
@@ -226,7 +226,7 @@ void total_pull_x_times(char *rar[])
         //Check if new
         if(inv_r[pull_save]==0)
         {
-            printf("NEW");
+            printf(BHCYN"NEW"CRESET);
         }else{printf("   ");}
 
 
@@ -244,7 +244,7 @@ void total_pull_x_times(char *rar[])
         //Check if new
         if(inv_sr[pull_save]==0)
         {
-            printf("NEW");
+            printf(BHMAG"NEW"CRESET);
         }else{printf("   ");}
 
 
@@ -255,14 +255,14 @@ void total_pull_x_times(char *rar[])
     }
     else if (state == 4) // Super-Super-Rare
     {
-        printf("   ");
-        printf(HYEL"[%c]"CRESET, ssr[pull_save]);
-        printf(" ");
+        printf("   [");
+        printf(BYEL"%c"CRESET, ssr[pull_save]);
+        printf("] ");
 
         //Check if new
         if(inv_ssr[pull_save]==0)
         {
-            printf("NEW");
+            printf(BYEL"NEW"CRESET);
         }else{printf("   ");}
 
 
