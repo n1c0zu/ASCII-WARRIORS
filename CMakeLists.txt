@@ -6,10 +6,12 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(ASCII_WARRIORS
+    gatcga.c
     core.c
     core.h
     database.h
-    gatcga.c
     inventory.h
-        save.h
+    save.h
+        combat.h
+        menu.h
 )

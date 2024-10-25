@@ -2,140 +2,129 @@
 // Created by nicol on 21/10/2024.
 //
 
-#include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <conio.h>
-#include <unistd.h>
-#include <windows.h>
+#include <stdbool.h>  // Libreria per il tipo bool
+#include <stdio.h>    // Libreria standard di input/output
+#include <stdlib.h>   // Libreria per funzioni standard come malloc, rand e system
+#include <time.h>     // Libreria per funzioni sul tempo, usata per srand
+#include <conio.h>    // Libreria per funzioni di input/output su console
+#include <unistd.h>   // Libreria per funzioni di controllo dei processi
+#include <windows.h>  // Libreria per funzioni specifiche di Windows
 
-
-#include "core.h"
-
-
+#include "core.h"     // Include il file header core.h
 
 int main()
 {
-    system("mode 125,40");   //Set mode to ensure window does not exceed buffer size
-    SMALL_RECT WinRect = {0, 0, 125, 40};   //New dimensions for window in 8x12 pixel chars
-    SMALL_RECT* WinSize = &WinRect;
-    SetConsoleWindowInfo(GetStdHandle(STD_OUTPUT_HANDLE), true, WinSize);   //Set new size for window
+    system("mode 125,40");   // Imposta modalità della console per non superare le dimensioni del buffer
+    SMALL_RECT WinRect = {0, 0, 125, 40};   // Nuove dimensioni per la finestra in caratteri 8x12 pixel
+    SMALL_RECT* WinSize = &WinRect;  // Puntatore a WinRect per SetConsoleWindowInfo
+    SetConsoleWindowInfo(GetStdHandle(STD_OUTPUT_HANDLE), true, WinSize);   // Imposta le nuove dimensioni per la finestra
 
-    /*system("mode con: cols=125 lines=40");
+    /* Impostazione alternativa per la console
+    system("mode con: cols=125 lines=40");
     COORD bufferSize;
     bufferSize.X = 125;
     bufferSize.Y = 40;
-    SetConsoleScreenBufferSize(GetStdHandle(STD_OUTPUT_HANDLE), bufferSize);*/
+    SetConsoleScreenBufferSize(GetStdHandle(STD_OUTPUT_HANDLE), bufferSize);
+    */
 
-    // Seed the random number generator with the current time
-    srand(time(NULL));
+    srand(time(NULL));  // Seed per generare numeri casuali basato sull'ora corrente
 
-    // Variable declarations
-    char select; // For user input
-    char *rar[] = {"normal","rare","super-rare","super-super-rare","ultra-rare"}; // Array of rarity levels
-    char menu = '1'; // Variable to store menu selection
+    // Dichiarazione variabili
+    char select;  // Variabile per input dell'utente
+    char *rar[] = {"normal","rare","super-rare","super-super-rare","ultra-rare"};  // Array di livelli di rarità
+    char menu = '1';  // Variabile per memorizzare la selezione del menu
 
-
-
-    /* Example of how to use stats
+    /* Esempio di come usare le statistiche
     printf("Number: %c, Atk: %d, Res: %d, Dex: %d, Spd: %d\n",
            n_Stats[0].number, n_Stats[0].stats.atk, n_Stats[0].stats.res,
            n_Stats[0].stats.dex, n_Stats[0].stats.spd);
     */
 
+    put_in_fullscreen();  // Metti la finestra in modalità schermo intero
 
-    put_in_fullscreen();
-
-    while (true) // Infinite loop for the main menu
+    while (true) // Loop infinito per il menu principale
     {
-        // Clear the console
-        system("cls");
-        
-        menu_print();
-        // Get user input for menu selection
-        scanf(" %c", &menu);
-        system("cls"); // Clear the console again for the next display
+        system("cls");  // Pulisci la console
 
-        // Switch statement to handle menu selection
-        switch(menu)
+        menu_print();  // Stampa il menu
+        scanf(" %c", &menu);  // Ottieni input dell'utente per la selezione del menu
+        system("cls");  // Ripulisci la console per la schermata successiva
+
+        switch(menu)  // Switch per gestire la selezione del menu
         {
-            case '1': // Case for doing a single pull
-                if(money >= 10) // Check if user has enough money
+            case '1':  // Caso per fare una singola estrazione
+                if(money >= 10)  // Controlla se l'utente ha abbastanza denaro
                 {
-                    pull_x_times(1); // Call function to do a single pull
-                    money -= 10; // Deduct money
+                    pull_x_times(1);  // Funzione per fare una singola estrazione
+                    money -= 10;  // Diminuisci il denaro
                 }
                 else
                 {
-                    puts("no money"); // Inform user they don't have enough money
+                    puts("no money");  // Informa l'utente che non ha abbastanza denaro
                 }
                 printf("\n");
                 break;
 
-            case '2': // Case for doing 10 pulls
-                if(money >= 10 * 10) // Check if user has enough money for 100 pulls
+            case '2':  // Caso per fare 10 estrazioni
+                if(money >= 10 * 10)  // Controlla se l'utente ha abbastanza denaro per 10 estrazioni
                 {
-                    pull_x_times(10); // Call function to pull 10 times
-                    money -= 10 * 10; // Deduct money
+                    pull_x_times(10);  // Funzione per fare 10 estrazioni
+                    money -= 10 * 10;  // Diminuisci il denaro
                 }
                 else
                 {
-                    puts("no money"); // Inform user they don't have enough money
+                    puts("no money");  // Informa l'utente che non ha abbastanza denaro
                 }
                 printf("\n");
                 break;
 
-            case '3':
-                if(money >= pull_times * 10) // Check if user has enough money for 100 pulls
+            case '3':  // Caso per fare un numero variabile di estrazioni
+                if(money >= pull_times * 10)  // Controlla se l'utente ha abbastanza denaro per estrazioni
                 {
-                    pull_x_times(pull_times); // Call function to pull 10 times
-                    money -= pull_times * 10; // Deduct money
+                    pull_x_times(pull_times);  // Funzione per fare 'pull_times' estrazioni
+                    money -= pull_times * 10;  // Diminuisci il denaro
                 }
                 else
                 {
-                    puts("no money"); // Inform user they don't have enough money
+                    puts("no money");  // Informa l'utente che non ha abbastanza denaro
                 }
                 printf("\n");
                 break;
 
-            case '4': // Case for showing inventory
-
-                inv_print(); //Print inventory
+            case '4':  // Caso per mostrare l'inventario
+                inv_print();  // Stampa l'inventario
                 break;
 
-            case '5': // Case for adding money
-                money += 1000; // Increase money by 1000
-                printf("\ntotal money: %d \n\n", money); // Display total money
+            case '5':  // Caso per aggiungere denaro
+                money += 1000;  // Aumenta il denaro di 1000
+                printf("\ntotal money: %d \n\n", money);  // Mostra il denaro totale
                 puts("added 1000 money");
                 break;
 
-            case '6':
-                printf("Current save file: %s\n\n", current_save_file);
-                save_game(); // Save to file
+            case '6':  // Caso per salvare il gioco
+                printf("Current save file: %s\n\n", current_save_file);  // Mostra il file di salvataggio attuale
+                save_game();  // Salva il gioco
                 break;
 
-            case '7':
-                printf("Current save file: %s\n\n", current_save_file);
-                load_game(); // Load from file
+            case '7':  // Caso per caricare il gioco
+                printf("Current save file: %s\n\n", current_save_file);  // Mostra il file di salvataggio attuale
+                load_game();  // Carica il gioco
                 break;
 
-            case '8':
+            case '8':  // Caso per uscire dal programma
                 printf("Exiting...\n");
                 exit(0);
 
-            case '9':
-                first_startup=true;
-                combat();
+            case '9':  // Caso per avviare la modalità combattimento
+                first_startup = true;  // Imposta variabile di avvio
+                combat();  // Avvia la funzione di combattimento
                 break;
 
-
-            default:
+            default:  // Caso di opzione non valida
                 printf("Invalid option. Please try again.\n");
-
         }
 
-        system("pause"); // Pause for user input before continuing
+        system("pause");  // Pausa per input utente prima di continuare
     }
 
     return 0;

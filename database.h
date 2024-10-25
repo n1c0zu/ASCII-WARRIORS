@@ -24,6 +24,8 @@ int sr_rar = 80; // Super-rare rarity count
 int ssr_rar = 10; // Super-super-rare rarity count
 int ur_rar = 1; // Ultra-rare rarity count
 
+
+
 // Definition and initialization of the character stats arrays for different rarity levels
 struct CharStats n_Stats[] = {
     {'0', {10, 5, 8, 7}},
