@@ -13,4 +13,7 @@ add_executable(ASCII_WARRIORS
     inventory.h
     menu.c
     menu.h
-    save.h)
+    save.h
+        combat.c
+        combat.h
+        combat.h)

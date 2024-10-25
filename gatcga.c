@@ -8,6 +8,8 @@
 #include <conio.h>
 #include <unistd.h>
 #include <windows.h>
+
+#include "combat.h"
 #include "core.h"
 
 
@@ -123,6 +125,7 @@ int main()
 
             case '9':
                 first_startup=true;
+                combat();
                 break;
 
 
