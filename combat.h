@@ -5,6 +5,9 @@
 #ifndef FIGHT_H
 #define FIGHT_H
 
+
+
 void combat();
+
 
 #endif //FIGHT_H

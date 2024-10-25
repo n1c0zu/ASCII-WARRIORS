@@ -6,9 +6,10 @@
 #include <stdlib.h>
 #include <time.h>
 
+
+#include "core.h"
 #include "database.h"
 #include "inventory.h"
-#include "core.h"
 
 #include <windows.h>
 

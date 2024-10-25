@@ -5,7 +5,7 @@
 #ifndef DATABASE_H // Include guard to prevent multiple inclusions
 #define DATABASE_H
 
-#include "core.h" // Include the core header for necessary structures and functions
+
 
 // Arrays of characters representing different categories for pulls
 char n[] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57}; // Numbers represented as ASCII values

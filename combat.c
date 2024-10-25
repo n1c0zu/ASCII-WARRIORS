@@ -4,10 +4,12 @@
 //
 #include <stdio.h>
 
-#include "core.h"
+
 #include "combat.h"
 
 void combat()
 {
-    printf("Combat\n");
+
+        printf("Combat\n");
+
 }

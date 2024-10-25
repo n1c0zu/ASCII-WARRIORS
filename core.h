@@ -7,6 +7,8 @@
 
 #include "menu.h"
 
+#include <stdbool.h>
+
 // Function declarations for pulling characters and managing inventory
 int pull(); // Function to determine the rarity of a pulled character
 int pullin(int state); // Function to get a random index based on rarity state
@@ -38,12 +40,5 @@ struct CharStats {
     char character; // Character identifier
     struct Stats stats; // Character stats
 };
-
-// Extern declarations of the character stats arrays for different rarity levels
-extern struct CharStats n_Stats[]; // Array for Normal character stats
-extern struct CharStats r_Stats[]; // Array for Rare character stats
-extern struct CharStats sr_Stats[]; // Array for Super-Rare character stats
-extern struct CharStats ssr_Stats[]; // Array for Super-Super-Rare character stats
-extern struct CharStats ur_Stats[]; // Array for Ultra-Rare character stats
 
 #endif //CORE_H // End of include guard

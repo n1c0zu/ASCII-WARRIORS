@@ -16,4 +16,5 @@ add_executable(ASCII_WARRIORS
     save.h
         combat.c
         combat.h
-        combat.h)
+        combat.h
+)
