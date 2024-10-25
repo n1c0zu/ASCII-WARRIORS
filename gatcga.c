@@ -124,11 +124,7 @@ int main()
                 combat();  // Start the combat function
 
                 break;
-
-
-            case 'N':
-                funny();
-                break;
+        
 
             default:  // Case of invalid option
                 printf("Invalid option. Please try again.\n");
