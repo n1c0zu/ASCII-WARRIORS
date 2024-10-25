@@ -1,6 +1,7 @@
 //
 // Created by nicol on 22/10/2024.
 //
+
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,6 +12,8 @@
 #include "database.h"
 #include "inventory.h"
 #include "save.h"
+
+
 
 #define ENDL puts("");
 

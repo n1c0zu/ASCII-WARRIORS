@@ -7,7 +7,13 @@
 
 
 
-void combat();
+void combat()
+{
+
+    printf("Combat\n");
+
+}
+
 
 
 #endif //FIGHT_H
