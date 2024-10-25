@@ -26,7 +26,7 @@ void put_in_fullscreen();
 void ascii_save();
 void ascii_load();
 void ascii_inventory();
-void funny();
+
 
 void combat();
 
