@@ -113,7 +113,7 @@ void inv_print()
             {
                 printf("[");
                 printf(BHGRN"%c"CRESET, n[i]);
-                printf("] x%-2d 000 %3d %3d %3d %3d     ",inv_n[i],n_Stats[i].stats.atk,n_Stats[i].stats.res,n_Stats[i].stats.dex,n_Stats[i].stats.spd);
+                printf("] x%-2d %3d %3d %3d %3d %3d     ",inv_n[i],n_Stats[i].stats.hp,n_Stats[i].stats.atk,n_Stats[i].stats.res,n_Stats[i].stats.dex,n_Stats[i].stats.spd);
             }else if (inv_n[i]==0){printf("[ ] x0  --- --- --- --- ---     ");}
 
         }else{
@@ -125,7 +125,7 @@ void inv_print()
             {
                 printf("[");
                 printf(BHCYN"%c"CRESET, r[i]);
-                printf("] x%-2d 000 %3d %3d %3d %3d     ",inv_r[i],r_Stats[i].stats.atk,r_Stats[i].stats.res,r_Stats[i].stats.dex,r_Stats[i].stats.spd);
+                printf("] x%-2d %3d %3d %3d %3d %3d     ",inv_r[i],r_Stats[i].stats.hp,r_Stats[i].stats.atk,r_Stats[i].stats.res,r_Stats[i].stats.dex,r_Stats[i].stats.spd);
             }else if (inv_r[i]==0){printf("[ ] x0  --- --- --- --- ---     ");}
 
         }else{
@@ -137,7 +137,7 @@ void inv_print()
             {
                 printf("[");
                 printf(BHMAG"%c"CRESET, sr[i]);
-                printf("] x%-2d 000 %3d %3d %3d %3d     ",inv_sr[i],sr_Stats[i].stats.atk,sr_Stats[i].stats.res,sr_Stats[i].stats.dex,sr_Stats[i].stats.spd);
+                printf("] x%-2d %3d %3d %3d %3d %3d     ",inv_sr[i],sr_Stats[i].stats.hp,sr_Stats[i].stats.atk,sr_Stats[i].stats.res,sr_Stats[i].stats.dex,sr_Stats[i].stats.spd);
             }else if (inv_sr[i]==0){printf("[ ] x0  --- --- --- --- ---     ");}
         }else{
             printf("                                ");
@@ -149,7 +149,7 @@ void inv_print()
             {
                 printf("[");
                 printf(BHYEL"%c"CRESET, ssr[i]);
-                printf("] x%-2d 000 %3d %3d %3d %3d     ",inv_ssr[i],ssr_Stats[i].stats.atk,ssr_Stats[i].stats.res,ssr_Stats[i].stats.dex,ssr_Stats[i].stats.spd);
+                printf("] x%-2d %3d %3d %3d %3d %3d     ",inv_ssr[i],ssr_Stats[i].stats.hp,ssr_Stats[i].stats.atk,ssr_Stats[i].stats.res,ssr_Stats[i].stats.dex,ssr_Stats[i].stats.spd);
             }else if (inv_ssr[i]==0){printf("[ ] x0  --- --- --- --- ---     ");}
         }else{
             printf("                                ");
@@ -161,7 +161,7 @@ void inv_print()
             {
                 printf("[");
                 printf(BHRED"%s"CRESET, ur[i]);
-                printf("] x%-2d 000 %3d %3d %3d %3d     \n",inv_ur[i],ur_Stats[i].stats.atk,ur_Stats[i].stats.res,ur_Stats[i].stats.dex,ur_Stats[i].stats.spd);
+                printf("] x%-2d %3d %3d %3d %3d %3d     \n",inv_ur[i],ur_Stats[i].stats.hp,ur_Stats[i].stats.atk,ur_Stats[i].stats.res,ur_Stats[i].stats.dex,ur_Stats[i].stats.spd);
             }else if (inv_ur[i]==0){printf("[  ] x0  --- --- --- --- ---     \n");}
         }else{
             puts("");

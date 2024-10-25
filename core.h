@@ -31,6 +31,7 @@ extern char current_save_file[100]; // Global variable to store the name of the 
 
 
 struct Stats {
+    int hp;  // Health points
     int atk; // Attack stat
     int res; // Resistance stat
     int dex; // Dexterity stat

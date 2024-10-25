@@ -11,7 +11,7 @@
 int inv_n[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // Inventory for normal items (10 items)
 int inv_r[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // Inventory for rare items (20 items)
 int inv_sr[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // Inventory for super-rare items (26 items)
-int inv_ssr[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // Inventory for super-super-rare items (40 items)
+int inv_ssr[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // Inventory for super-super-rare items (38 items)
 int inv_ur[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; // Inventory for ultra-rare items (16 items)
 
 // Global variable to keep track of the player's money
