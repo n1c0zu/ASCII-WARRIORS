@@ -11,8 +11,5 @@ add_executable(ASCII_WARRIORS
     database.h
     gatcga.c
     inventory.h
-    menu.c
-    menu.h
-    save.h
-        combat.h
+        save.h
 )

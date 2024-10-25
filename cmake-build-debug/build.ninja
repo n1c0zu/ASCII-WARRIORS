@@ -63,13 +63,6 @@ build CMakeFiles/ASCII_WARRIORS.dir/gatcga.c.obj: C_COMPILER__ASCII_WARRIORS_uns
   OBJECT_DIR = CMakeFiles\ASCII_WARRIORS.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_WARRIORS.dir
 
-build CMakeFiles/ASCII_WARRIORS.dir/menu.c.obj: C_COMPILER__ASCII_WARRIORS_unscanned_Debug C$:/Users/nicol/Documents/CODICI/ASCII$ WARRIORS/menu.c || cmake_object_order_depends_target_ASCII_WARRIORS
-  DEP_FILE = CMakeFiles\ASCII_WARRIORS.dir\menu.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/nicol/Documents/CODICI/ASCII WARRIORS/."
-  OBJECT_DIR = CMakeFiles\ASCII_WARRIORS.dir
-  OBJECT_FILE_DIR = CMakeFiles\ASCII_WARRIORS.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ASCII_WARRIORS
@@ -78,7 +71,7 @@ build CMakeFiles/ASCII_WARRIORS.dir/menu.c.obj: C_COMPILER__ASCII_WARRIORS_unsca
 #############################################
 # Link the executable ASCII_WARRIORS.exe
 
-build ASCII_WARRIORS.exe: C_EXECUTABLE_LINKER__ASCII_WARRIORS_Debug CMakeFiles/ASCII_WARRIORS.dir/core.c.obj CMakeFiles/ASCII_WARRIORS.dir/gatcga.c.obj CMakeFiles/ASCII_WARRIORS.dir/menu.c.obj
+build ASCII_WARRIORS.exe: C_EXECUTABLE_LINKER__ASCII_WARRIORS_Debug CMakeFiles/ASCII_WARRIORS.dir/core.c.obj CMakeFiles/ASCII_WARRIORS.dir/gatcga.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ASCII_WARRIORS.dir

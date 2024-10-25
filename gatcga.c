@@ -12,7 +12,7 @@
 
 
 #include "core.h"
-#include "combat.h"
+
 
 
 int main()
