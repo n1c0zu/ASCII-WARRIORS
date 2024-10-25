@@ -14,12 +14,10 @@
 
 int main()
 {
-    /*
     system("mode 125,40");   //Set mode to ensure window does not exceed buffer size
     SMALL_RECT WinRect = {0, 0, 125, 40};   //New dimensions for window in 8x12 pixel chars
     SMALL_RECT* WinSize = &WinRect;
     SetConsoleWindowInfo(GetStdHandle(STD_OUTPUT_HANDLE), true, WinSize);   //Set new size for window
-    */
 
     /*system("mode con: cols=125 lines=40");
     COORD bufferSize;
@@ -42,6 +40,9 @@ int main()
            n_Stats[0].number, n_Stats[0].stats.atk, n_Stats[0].stats.res,
            n_Stats[0].stats.dex, n_Stats[0].stats.spd);
     */
+
+
+    put_in_fullscreen();
 
     while (true) // Infinite loop for the main menu
     {

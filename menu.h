@@ -83,6 +83,7 @@
 
 void menu_print();
 void inv_print();
+void put_in_fullscreen();
 
 
 #endif //MENU_H
