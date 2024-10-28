@@ -22,7 +22,7 @@
 #define ENDL puts("");
 
 
-
+const static int size[] = {sizeof(n) / sizeof(n[0]), sizeof(r) / sizeof(r[0]), sizeof(sr) / sizeof(sr[0]), sizeof(ssr) / sizeof(ssr[0]), sizeof(ur) / sizeof(ur[0])};
 
 // Function to determine the rarity of the pulled character
 int pull()
@@ -58,36 +58,8 @@ int pull()
 // Function to get a random index for a given rarity state
 int pullin(int state)
 {
-    // Calculate sizes of different rarity arrays
-    int size_n = sizeof(n) / sizeof(n[0]);
-    int size_r = sizeof(r) / sizeof(r[0]);
-    int size_sr = sizeof(sr) / sizeof(sr[0]);
-    int size_ssr = sizeof(ssr) / sizeof(ssr[0]);
-    int size_ur = sizeof(ur) / sizeof(ur[0]);
-
-    // Return a random index based on the rarity state
-    if (state == 1)
-    {
-        return rand() % size_n; // Normal
-    }
-    else if (state == 2)
-    {
-        return rand() % size_r; // Rare
-    }
-    else if (state == 3)
-    {
-        return rand() % size_sr; // Super-Rare
-    }
-    else if (state == 4)
-    {
-        return rand() % size_ssr; // Super-Super-Rare
-    }
-    else if (state == 5)
-    {
-        return rand() % size_ur; // Ultra-Rare
-    }
-
-    return -1; // Fallback return
+    //returning a random number for every rarity, using a lookup table
+    return rand() % size[state-1];
 }
 
 
