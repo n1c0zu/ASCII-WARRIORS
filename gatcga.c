@@ -125,6 +125,11 @@ int main()
 
                 break;
         
+            case 'v':
+
+            print_party();
+
+            break;
 
             default:  // Case of invalid option
                 printf("Invalid option. Please try again.\n");

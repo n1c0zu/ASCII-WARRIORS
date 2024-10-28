@@ -26,6 +26,16 @@ int ssr_rar = 25; // Super-super-rare rarity count
 int ur_rar = 1; // Ultra-rare rarity count
 
 
+// Define a structure for each party member
+typedef struct {
+    char name[3];   // Array for character name (or single character)
+    int rarity;      // Store rarity level
+    int position;    // Store the position (j index)
+} PartyMember;
+
+// Define the party array with 4 members
+PartyMember party[4];
+
 
 // Definition and initialization of the character stats arrays for different rarity levels
 
