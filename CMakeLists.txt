@@ -14,4 +14,5 @@ add_executable(ASCII_WARRIORS
     save.h
         combat.h
         menu.h
+        party.h
 )

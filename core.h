@@ -9,8 +9,6 @@
 #include <stdbool.h>
 
 
-
-
 // Function declarations for pulling characters and managing inventory
 int pull(); // Function to determine the rarity of a pulled character
 int pullin(int state); // Function to get a random index based on rarity state
