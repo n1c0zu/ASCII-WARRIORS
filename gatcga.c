@@ -119,17 +119,13 @@ int main()
                 printf("Exiting...\n");
                 exit(0);
 
-            case '9':  // Case to start combat mode
+            case '9':
                 first_startup = true;  // Set startup variable
-                partysel();  // Start the combat function
-
                 break;
-        
-            case 'v':
 
-            print_party();
-
-            break;
+            case 'p':
+                menu_party();
+                break;
 
             default:  // Case of invalid option
                 printf("Invalid option. Please try again.\n");

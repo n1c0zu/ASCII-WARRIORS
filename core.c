@@ -318,7 +318,7 @@ void partysel()
                 if (!valid)
                 {
                     system("cls");
-                    printf("Invalid selection for %d - 4 party member. Please try again.\n\n");
+                    printf("Invalid selection for %d - 4 party member. Please try again.\n\n",i+1);
                 }
             }
             else
@@ -366,4 +366,27 @@ void print_party()
         printf("Character: %s, Rarity: %d, Position: %d\n", party[i].name, party[i].rarity, party[i].position);
     }
 
+}
+
+void menu_party()
+{
+    char select;
+    puts("1 for creating a party");
+    puts("2 for displaying current party");
+
+    scanf(" %c", &select);
+    system("cls");
+
+    switch(select)
+    {
+        case '1':
+
+            partysel();
+        break;
+        case '2':
+            print_party();
+        break;
+        default:
+            puts("Invalid selection");
+    }
 }
