@@ -25,7 +25,7 @@ int sr_rar = 80; // Super-rare rarity count
 int ssr_rar = 25; // Super-super-rare rarity count
 int ur_rar = 1; // Ultra-rare rarity count
 
-char *party[4];
+
 
 // Definition and initialization of the character stats arrays for different rarity levels
 
