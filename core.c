@@ -264,3 +264,9 @@ void pull_x_times(int n)
     }
     puts("");
 }
+
+
+void partysel()
+{
+    
+}

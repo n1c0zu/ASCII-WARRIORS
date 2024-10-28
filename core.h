@@ -18,7 +18,7 @@ void pull_x_times(int n); // Function to pull multiple times and display results
 void total_pull_x_times(char *rar[]); // Function to handle pulling and displaying results for multiple pulls
 void save_game(); // Function prototype to save the current game state (money and inventory)
 void load_game(); // Function prototype to load the game state (money and inventory)
-
+void partysel();
 
 void menu_print(); // Function prototype to print the menu
 void inv_print(); // Function prototype to print the inventory

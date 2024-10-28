@@ -14,6 +14,7 @@ char sr[] = {'a', 'e', 'i', 'o', 'u', 'y', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N
 char ssr[] = {'A', 'B', 'C', 'D', 'E', 'F', 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 58, 59, 60, 61, 62, 63, 64, 91, 92, 93, 94, 95, 96, 123, 124, 125, 126}; // Uppercase letters and special characters
 char *ur[] = {":)", "xD", ":P", "##", "&&", "69", "::", "!?", "^^", ":D", "8-", "ww", "jk", "fr", "Ab", "00"}; // Ultra-rare combos
 
+char *en[] = {"..."};
 // Array of rarity names for pulls
 char *rar[] = {"normal", "rare", "super-rare", "super-super-rare", "ultra-rare"};
 
@@ -24,7 +25,7 @@ int sr_rar = 80; // Super-rare rarity count
 int ssr_rar = 25; // Super-super-rare rarity count
 int ur_rar = 1; // Ultra-rare rarity count
 
-
+char *party[4];
 
 // Definition and initialization of the character stats arrays for different rarity levels
 
@@ -35,6 +36,10 @@ int ur_rar = 1; // Ultra-rare rarity count
 // SR:  110-145  245-470  245-470  245-470    45-60
 // SSR: 155-190  510-790  510-790  510-790    75-95
 // UR:  210-270  835-900  835-900  835-900  105-130
+
+struct CharStats en_stats[] = {
+    {'.',{25, 80, 80, 5}}
+};
 
 struct CharStats n_Stats[] = {
     {'0', {35, 125, 130, 95, 10}},
