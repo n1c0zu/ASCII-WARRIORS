@@ -103,10 +103,15 @@ void print_party()
             printf("   [");
             printf(BHYEL"%s"CRESET, party[i].name);
             printf("]         ");
-        }else
+        }else if(party[i].rarity == 5)
         {
             printf("   [");
             printf(BHRED"%s"CRESET, party[i].name);
+            printf("]        ");
+        }else
+        {
+            printf("   [");
+            printf(BHBLU"%s"CRESET, party[i].name);
             printf("]        ");
         }
     }
@@ -344,7 +349,9 @@ void menu_party()
     {
         case '1':
             for(int i=0;i<4;i++){
-                party[i].name[0] = '\0';
+                party[i].name[0] = 'N';
+                party[i].name[1] = 'a';
+                party[i].name[2] = 'N';
                 party[i].rarity = 0;
                 party[i].position = 0;
             }
