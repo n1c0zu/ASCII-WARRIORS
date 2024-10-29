@@ -20,6 +20,7 @@ void load_game(); // Function prototype to load the game state (money and invent
 void partysel(); // Function prototype to select the elements of the party
 void print_party(); // Function prototype to display the elements of the party
 void menu_party(); // Function prototype to display the party menu
+void print_rarity();
 
 void menu_print(); // Function prototype to print the menu
 void inv_print(); // Function prototype to print the inventory
