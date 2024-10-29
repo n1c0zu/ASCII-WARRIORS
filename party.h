@@ -343,7 +343,11 @@ void menu_party()
     switch(select)
     {
         case '1':
-
+            for(int i=0;i<4;i++){
+                party[i].name[0] = '\0';
+                party[i].rarity = 0;
+                party[i].position = 0;
+            }
             partysel();
         break;
         case '2':

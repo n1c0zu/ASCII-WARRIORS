@@ -91,31 +91,36 @@ int main()
                 printf("\n");
                 break;
 
-            case '4':  // Case to show the inventory
+            case 'I':
+            case 'i':  // Case to show the inventory
                 ascii_inventory();
                 inv_print();  // Print the inventory
             puts("");
                 break;
 
-            case '5':  // Case to add money
+            case 'M':
+            case 'm':  // Case to add money
                 money += 1000;  // Increase money by 1000
                 printf("\ntotal money: %d \n\n", money);  // Show total money
                 puts("added 1000 money");
                 break;
 
-            case '6':  // Case to save the game
+            case 'S':
+            case 's':  // Case to save the game
                 ascii_save();
                 printf("Current save file: %s\n\n", current_save_file);  // Show the current save file
                 save_game();  // Save the game
                 break;
 
-            case '7':  // Case to load the game
+            case 'L':
+            case 'l':  // Case to load the game
                 ascii_load();
                 printf("Current save file: %s\n\n", current_save_file);  // Show the current save file
                 load_game();  // Load the game
                 break;
 
-            case '8':  // Case to exit the program
+            case 'N':
+            case 'n':  // Case to exit the program
                 printf("Exiting...\n");
                 exit(0);
 
