@@ -114,6 +114,13 @@ void save_game() {
     }
     fprintf(file, "\n"); // New line after inventory
 
+    for(int i = 0; i < 4; i++)
+    {
+        fprintf(file,"%s %d %d",party[i].name, party[i].rarity, party[i].position);
+        fprintf(file, "\n"); // New line after inventory
+    }
+
+
     fclose(file); // Close the file after writing
     printf("Game saved successfully to '%s'.\n", filepath); // Notify user of successful save
     strcpy(current_save_file, filepath); // Update current save file path
@@ -167,6 +174,13 @@ void load_game() {
 
     for (int i = 0; i < sizeof(inv_ur) / sizeof(inv_ur[0]); i++) {
         fscanf(file, "%d", &inv_ur[i]); // Read inventory items
+    }
+
+    for(int i = 0; i < 4; i++)
+    {
+        fscanf(file,"%s",&party[i].name);
+        fscanf(file,"%d", &party[i].rarity);
+        fscanf(file,"%d", &party[i].position);
     }
 
     fclose(file); // Close the file after reading
