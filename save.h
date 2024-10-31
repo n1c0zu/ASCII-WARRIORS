@@ -129,14 +129,6 @@ void save_game() {
 // Function to load money and inventory from a file
 void load_game() {
 
-    for(int i=0;i<4;i++){
-        party[i].name[0] = 'N';
-        party[i].name[1] = 'a';
-        party[i].name[2] = 'N';
-        party[i].rarity = 0;
-        party[i].position = 0;
-    }
-
     char filename[100]; // Buffer for the filename
 
     create_save_directory(); // Ensure the directory exists

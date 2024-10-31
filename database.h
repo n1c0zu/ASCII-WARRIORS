@@ -34,8 +34,12 @@ typedef struct {
 } PartyMember;
 
 // Define the party array with 4 members
-PartyMember party[4];
-
+PartyMember party[4]={
+{{"Nan"},0,0},
+{{"Nan"},0,0},
+{{"Nan"},0,0},
+{{"Nan"},0,0},
+};
 
 // Definition and initialization of the character stats arrays for different rarity levels
 
