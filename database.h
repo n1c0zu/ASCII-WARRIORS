@@ -33,7 +33,7 @@ typedef struct {
     int position;    // Store the position (j index)
 } PartyMember;
 
-// Define the party array with 4 members
+// Define and initialize the party array with 4 members
 PartyMember party[4]={
 {{"Nan"},0,0},
 {{"Nan"},0,0},
