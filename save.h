@@ -119,8 +119,7 @@ void save_game() {
         fprintf(file,"%s %d %d",party[i].name, party[i].rarity, party[i].position);
         fprintf(file, "\n"); // New line after inventory
     }
-
-    fprintf(file, "NIGGA");
+    
 
     fclose(file); // Close the file after writing
     printf("Game saved successfully to '%s'.\n", filepath); // Notify user of successful save
