@@ -111,8 +111,8 @@ void print_party()
         }else
         {
             printf("   [");
-            printf(BHBLU"%s"CRESET, party[i].name);
-            printf("]        ");
+            printf(BHBLU" "CRESET);
+            printf("]         ");
         }
     }
     puts("");
