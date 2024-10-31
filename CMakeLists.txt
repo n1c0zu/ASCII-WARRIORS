@@ -12,7 +12,7 @@ add_executable(ASCII_WARRIORS
     database.h
     inventory.h
     save.h
-        combat.h
-        menu.h
-        party.h
+    combat.h
+    menu.h
+    party.h
 )
