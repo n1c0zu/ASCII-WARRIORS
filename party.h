@@ -110,7 +110,7 @@ void print_party()
             printf("]        ");
         }else
         {
-            printf(BHBLK"   <Empty>     "CRESET);
+            printf(BHBLU"   <Empty>     "CRESET);
         }
     }
     puts("");
