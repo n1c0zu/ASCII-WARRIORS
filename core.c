@@ -22,6 +22,7 @@ const static int size[] = {sizeof(n) / sizeof(n[0]), sizeof(r) / sizeof(r[0]), s
 #include "party.h"
 
 
+
 #define ENDL puts("");
 
 
