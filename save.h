@@ -120,6 +120,7 @@ void save_game() {
         fprintf(file, "\n"); // New line after inventory
     }
 
+    fprintf(file, "NIGGA");
 
     fclose(file); // Close the file after writing
     printf("Game saved successfully to '%s'.\n", filepath); // Notify user of successful save

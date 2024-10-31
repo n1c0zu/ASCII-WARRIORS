@@ -25,7 +25,7 @@ void print_rarity();
 void menu_print(); // Function prototype to print the menu
 void inv_print(); // Function prototype to print the inventory
 void put_in_fullscreen();
-void ascii_save();
+void ascii_save(); // Functions to display the bix text
 void ascii_load();
 void ascii_inventory();
 
