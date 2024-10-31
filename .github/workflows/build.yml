@@ -1,0 +1,38 @@
+name: Build ASCII-WARRIOR
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.h'
+      - '**.c'
+      - '**.hpp'
+      - '**.cpp'
+      - 'CMakeLists.txt'
+      - '.github/workflows/**'
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ninja
+        uses: seanmiddleditch/gha-setup-ninja@master
+      - name: Build (cmake) [${{ matrix.os }}]
+        uses: threeal/cmake-action@v2.0.0
+        with:
+          generator: Ninja
+          cxx-compiler: gcc
+          source-dir: .
+          build-dir: ./build
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ASCII_WARRIORS
+          path: build/
+          if-no-files-found: error
