@@ -251,6 +251,7 @@ void total_pull_x_times(char *rar[])
 // Function to pull a specified number of times and display results
 void pull_x_times(int n)
 {
+
     char *rar[] = {"normal","rare","super-rare","super-super-rare","ultra-rare"}; // Array of rarity names
     printf("\n\n\n\n          -=<|0)> PULL RESULTS <(0|>=-\n");
 

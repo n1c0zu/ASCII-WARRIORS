@@ -5,11 +5,10 @@
 #include <stdbool.h>  // Library for the bool type
 #include <stdio.h>    // Standard input/output library
 #include <stdlib.h>   // Library for standard functions like malloc, rand and system
-#include <time.h>     // Library for time functions, used for srand
 #include <conio.h>    // Library for console input/output functions
 #include <unistd.h>   // Library for process control functions
 #include <windows.h>  // Library for Windows-specific functions
-
+#include <time.h>     // Library for time functions, used for srand
 #include "core.h"     // Includes the header file core.h
 
 int main()
@@ -53,6 +52,7 @@ int main()
         switch(menu)  // Switch to handle menu selection
         {
             case '1':  // Case to make a single pull
+                srand(time(NULL));
                 if(money >= 10)  // Check if the user has enough money
                 {
                     pull_x_times(1);  // Function to make a single pull
@@ -66,6 +66,7 @@ int main()
                 break;
 
             case '2':  // Case to make 10 pulls
+                srand(time(NULL));
                 if(money >= 10 * 10)  // Check if the user has enough money for 10 pulls
                 {
                     pull_x_times(10);  // Function to make 10 pulls
@@ -79,6 +80,7 @@ int main()
                 break;
 
             case '3':  // Case to make a variable number of pulls
+                srand(time(NULL));
                 if(money >= pull_times * 10)  // Check if the user has enough money for pulls
                 {
                     pull_x_times(pull_times);  // Function to make 'pull_times' pulls
