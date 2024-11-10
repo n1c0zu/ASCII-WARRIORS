@@ -136,7 +136,7 @@ void menu_print()
         printf("\n\n\nCurrent save file: %s\n", current_save_file);
         printf("Balance: %d \n\n\n", money); // Display total money
         printf("MAKE YOUR SELECTION\n\n");
-        printf("1: PULL         M: GIVE MONEY\n");
+        printf("1: PULL         M: GIVE MONEY   C: LOAD COMBAT TEST\n");
         printf("2: PULL x10     S: SAVE GAME\n");
         printf("I: INVENTORY    L: LOAD GAME\n",pull_times);
         printf("P: PARTY MENU   N: QUIT\n");

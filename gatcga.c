@@ -131,7 +131,13 @@ int main()
                 break;
 
             case 'p':
+            case 'P':  // Case for party creation
                 menu_party();
+                break;
+
+            case 'c':
+            case 'C':  // Case for combat scenario
+                combat();
                 break;
 
             default:  // Case of invalid option

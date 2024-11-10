@@ -16,11 +16,10 @@
 const static int size[] = {sizeof(n) / sizeof(n[0]), sizeof(r) / sizeof(r[0]), sizeof(sr) / sizeof(sr[0]), sizeof(ssr) / sizeof(ssr[0]), sizeof(ur) / sizeof(ur[0])};
 
 
-#include "combat.h"
 #include "menu.h"
 #include "save.h"
 #include "party.h"
-
+#include "combat.h"
 
 
 #define ENDL puts("");
