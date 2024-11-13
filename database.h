@@ -25,6 +25,23 @@ int sr_rar = 80; // Super-rare rarity count
 int ssr_rar = 25; // Super-super-rare rarity count
 int ur_rar = 1; // Ultra-rare rarity count
 
+//define a struct for each enemy
+typedef struct
+{
+    char name[21];
+    int hp;
+    int atk;
+    int res;
+    int dex;
+    int spd;
+
+} Enemy;
+
+//define and inizialize the enemies array with 1 member
+Enemy enemies[] = {
+{"TEST", 55, 135, 135, 135, 15}
+};
+
 
 // Define a structure for each party member
 typedef struct {
