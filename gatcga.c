@@ -140,6 +140,11 @@ int main()
                 combat();
                 break;
 
+            case 't':
+            case 'T':
+                color_test();
+                break;
+        
             default:  // Case of invalid option
                 printf("Invalid option. Please try again.\n");
         }

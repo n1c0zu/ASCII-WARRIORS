@@ -28,7 +28,7 @@ void put_in_fullscreen();
 void ascii_save(); // Functions to display the bix text
 void ascii_load();
 void ascii_inventory();
-
+void color_test();
 
 void combat();
 
