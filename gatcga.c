@@ -148,8 +148,9 @@ int main()
             default:  // Case of invalid option
                 printf("Invalid option. Please try again.\n");
         }
-
         system("pause");  // Pause for user input before continuing
+
+        usleep(300000);
     }
 
     return 0;
