@@ -11,18 +11,18 @@ void healtbar(int ene,int hp, char bar[20])
     float riemp = (hp / part);
     if(riemp <1)
     {
-        bar[0] = '=';
+        bar[0] = '#';
     }else
     {
         for(int i = 0; i < round(riemp); i++)
         {
-            bar[i] = '=';
+            bar[i] = '#';
         }
     }
 }
 
 void printLayer1(int currenthp){                // ENEMY STATUS
-    char bar[] = {"                    "};
+    char bar[] = {"--------------------"};
     healtbar(0,currenthp,bar);
     printf("                                                      \n");    // fighting window is 54 characters long
     printf("                [%s] %4d HP        a\n",bar,currenthp);
@@ -158,7 +158,7 @@ void printLayer4(){              // STATUS MESSAGES AND INPUTS
 
 void combat()
 {
-    int currenthp = 37;
+    int currenthp = 5;
     int partyHP[4],partyATK[4],partyRES[4],partyDEX[4],partySPD[4]; // arrays to store modifiable values
     int enemyHP,enemyATK,enemyRES,enemyDEX,enemySPD;
     printf("combat test\n\nPLACEHOLDER\n");
